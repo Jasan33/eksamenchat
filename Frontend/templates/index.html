@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="{{ url_for('static', filename='images/Skravle_Icon.png') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksamenchat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+    <div class="main_content">
+        <div class="navbar">
+            <p id="usernames" class="username_profile" data-username="{{ username }}">
+                {% if username %}
+                <h1>Welcome, {{ username }}!</h1>
+                {% endif %}
+            </p>
+        </div>
+        <div class="chat_box" id="chat">
+            <ul class="ul" id="chat-messages">
+            </ul>
+            <div class="sendstufff">
+                <input type="text" id="message" placeholder="Enter a Message">
+                <button onclick="SubmitMessage()" id="submit">Send</button>
+            </div>
+        </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>
