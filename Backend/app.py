@@ -1,11 +1,9 @@
 from flask import Flask, render_template, request, redirect, session, url_for, flash
-from flask_socketio import SocketIO, join_room, leave_room, emit
+from flask_socketio import SocketIO, emit
 from flask_mysqldb import MySQL
-import MySQLdb.cursors
 from dotenv import load_dotenv
 import os
 import random
-import string
 
 load_dotenv()
 
