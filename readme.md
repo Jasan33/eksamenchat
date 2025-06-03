@@ -2,7 +2,8 @@
 <h1 align="center"> Welcome to Eksamenchat! </h1>
 <p align="center">
 
-![image](https://github.com/user-attachments/assets/199f4df6-5abb-436a-a88e-0f4dd595637f)
+![image](https://github.com/user-attachments/assets/1e8b7178-4697-4c63-8ac2-a0961b8a33b3)
+
 
 
 ## Now available at (https://eksamenchat.jasan.top)
