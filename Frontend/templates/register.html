@@ -2,12 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="x-icon" href="{{ url_for('static', filename='images/Skravle_Icon.png') }}">
+    <link rel="shortcut icon" type="x-icon" href="{{ url_for('static', filename='images/ec.png') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Eksamenchat</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+ {% with messages = get_flashed_messages(with_categories=True) %}
+  {% if messages %}
+    <ul class="flashes">
+      {% for category, message in messages %}
+        <li class="{{ category }}">{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  {% endwith %}
     <div class="login_and_register_main">
         <h1>Register to experience 100% fun</h1>
         <form action="{{ url_for('register') }}" method="POST" class="login_and_register_form">
@@ -20,7 +29,7 @@
             <label for="email">Email:</label>
             <input class="height" type="email" id="email" name="email" required><br>
             <button class="submit_button" type="submit">Register</button>
-            <!-- A simple javascript that checks if the password matches when trying to register -->
+            <!-- Javascript that checks if the password matches when trying to register -->
             <script>
                 const form = document.querySelector("form");
                 const password = document.getElementById("password");
@@ -29,7 +38,9 @@
                 form.addEventListener("submit", (e) => {
                     if (password.value !== confirmPassword.value) {
                         e.preventDefault();
-                        alert("Passwords do not match!");
+                        <ul class="flashes">
+                            <li class="category">Math</li>
+                        </ul>
                     }
                 });
             </script>
