@@ -2,8 +2,10 @@
 <h1 align="center"> Welcome to Eksamenchat! </h1>
 <p align="center">
 
+![image](https://github.com/user-attachments/assets/1e8b7178-4697-4c63-8ac2-a0961b8a33b3)
 
- 
+
+
 ## Now available at (https://eksamenchat.jasan.top)
 
 
@@ -150,6 +152,7 @@ This project was made using the sources down below. If you want to know more abo
 ### Inspiration:
   Flask-SocketIO: https://www.youtube.com/watch?v=AMp6hlA8xKA&ab_channel=PrettyPrinted
 
+
 ### Tutorials
   Flask-SocketIO: https://www.youtube.com/watch?v=AMp6hlA8xKA&ab_channel=PrettyPrinted
 
@@ -160,6 +163,7 @@ This project was made using the sources down below. If you want to know more abo
   Mariadb: https://www.youtube.com/watch?v=cBDz7P4gTCI&ab_channel=TechBrothersIT
 
   License: https://www.youtube.com/watch?v=TSyoSDBZKbU
+
 
 ### Others
   Codefactor: https://www.codefactor.io
