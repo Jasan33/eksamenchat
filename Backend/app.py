@@ -3,7 +3,6 @@ from flask_socketio import SocketIO, emit
 from flask_mysqldb import MySQL
 from dotenv import load_dotenv
 import os
-import random
 
 load_dotenv()
 
@@ -26,11 +25,6 @@ app.config['MYSQL_DB'] = os.getenv("DATABASE")
 # mysql and Advanced encrytion seceruty (AES) connections
 mysql = MySQL(app)
 AES_KEY = os.getenv("AES_KEY")
-
-# 2 Arrys room and connected players witch will store data
-rooms = {}
-connected_players = {}
-
 
 # Main rought to home page where you need to be logged in
 @app.route("/")
@@ -97,17 +91,20 @@ def login():
     return render_template('login.html')
 
 
+# Page for logout that clears session of the user
 @app.route("/logout")
 def logout():
     session.clear()
     flash("You have been logged out!")
-    return redirect(url_for('home'))
+    return redirect(url_for('login'))
 
 
+# SocketIO is readdy to recive a message from javascript frontend
 @socketio.on("new_message")
 def handle_new_message(user_message):
     print(f"{user_message}")
     emit("chat", {"user_message": user_message["user_message"]}, broadcast=True)
+
 
 if __name__ == "__main__":
     socketio.run(app, debug=True, port=7500)
