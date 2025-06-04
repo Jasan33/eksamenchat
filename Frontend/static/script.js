@@ -1,5 +1,7 @@
+// Socket and username connections for frontend
 const socket = io();
 const username = document.getElementById("usernames")?.dataset.username;
+
 
 // Takes the information from frontend as a form that gets submited to backend
 document.getElementById("chat-form").addEventListener("submit", (e) => {
