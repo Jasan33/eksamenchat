@@ -13,7 +13,7 @@
         <div class="navbar">
             <p id="usernames" class="username_profile" data-username="{{ username }}">
                 {% if username %}
-                    <h1>Welcome, {{ username }}!</h1>
+                    <h1 alt="Welcome user">Welcome, {{ username }}!</h1>
                 {% endif %}
             </p>
         </div>
@@ -21,8 +21,8 @@
             <ul class="ul" id="chat-messages">
             </ul>
             <form class="sendform" id="chat-form">
-                <input type="text" id="message" placeholder="Enter a Message">
-                <button type="submit">Send</button>
+                <input type="text" id="message" placeholder="Enter a Message" alt="Enter a Message to show other users">
+                <button type="submit" alt="submitt button, click to send">Send</button>
             </form>
         </div>
     <script src="{{url_for('static', filename='script.js')}}"></script>

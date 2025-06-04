@@ -19,16 +19,15 @@
   {% endwith %}
   
   <div class="login_and_register_main">
-      <h1>Login to Chat around the world!</h1>
-      <!-- The information of this form will go directly into the app.py before arriving at the database -->
+      <h1 alt="Login to Chat around the world!">Login to Chat around the world!</h1>
       <form action="{{ url_for('login') }}" method="POST" class="login_and_register_form">
-          <label for="username">Username:</label>
+          <label for="username" alt="Enter a username">Username:</label>
           <input class="height" type="text" id="username" name="username" required><br>
-          <label for="password">Password:</label>
+          <label for="password" alt="Enter a Password">Password:</label>
           <input class="height" type="password" id="password" name="password" required><br>
-          <button class="submit_button" type="submit">Login</button>
+          <button class="submit_button" alt="Submit login" type="submit">Login</button>
       </form>
-      <a href="{{ url_for('register') }}">Don't have an account!?</a>
+      <a href="{{ url_for('register') }}" alt="Don't have an account register now">Don't have an account?</a>
   </div>
     <script src="{{url_for('static', filename='script.js')}}"></script>
 </body>
