@@ -53,7 +53,8 @@ Eksamenchat is an advanced chat system where you can have a chat with anyone, ar
 
 ## Builds
 
-In order for me to build this content I have use verious amount of differnt tools. These tools have been specified down below
+In order for me to build this content I have used verious amount of differnt tools. These tools have been specified down below
+
 * Flask-socketIO
 * HTML
 * CSS
@@ -65,7 +66,7 @@ In order for me to build this content I have use verious amount of differnt tool
 
 
 
-Within the Python tools I have used some packages, these can be accses through the .requirements file
+Within the Python tool I have used some packages, these can be accses through the .requirements file
 
 
 ## Installtions
@@ -122,11 +123,7 @@ Under here is a tutorial to install the project with all the required packages f
 
 ## Contributes
 
-Contributions are what makes the open source community an amazing place to learn, inspire, and create.
-
-Unfortunatly...
-
-This project does not have any contributers other then myself
+At the moment this project does not have any contributers other then myself
 
 But...
 
